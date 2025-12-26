@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+        <meta name="form page" content="form">
+        <title>My Form</title>
+
+    </head>
+    <body style="background-color: blanchedalmond;">
+        <header>
+            <h1><center> Internship Application Form</center></h1>
+        </header>
+        <section autofocus>
+            <fieldset>
+                <legend>Navigation Menu</legend>
+            <nav>
+                <ul style="text-decoration: none;">
+                    <li><a href="#Details">Personal Details</a></li>
+                    <li><a href="#skill">Skillset</a></li>
+                    <li><a href="#Designation">Designation</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            </fieldset>
+        </section>
+        <hr>
+        <section >
+            <form action="https://http.org/get" formmethod="get">
+            <fieldset id="Details">
+                <legend>Personal Details</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="first">First Name:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="first" name="first" required  autocomplete="on" placeholder="John">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="last">Last Name:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="last" name="last" required autocomplete="on" placeholder="Doe">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="mail">E-Mail:</label>
+                        </td>
+                        <td>
+                            <input type="email" id="mail" name="mail" required autocomplete="on" placeholder="abc@gmail.com">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="pass">Password:</label>
+                        </td>
+                        <td>
+                            <input type="password" id="pass" name="pass" required autocomplete="on" placeholder="Password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="ph">Phone:</label>
+                        </td>
+                        <td>
+                            <input type="tel" id="ph" name="ph" required autocomplete="on" pattern="[0-9]{10}" placeholder="+91">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="year">Year of Birth:</label>
+                        </td>
+                        <td>
+                            <input type="number" id="year" name="year" required autocomplete="on"  value="1980" min="1950" max="2026">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="dob">Date of Birth:</label>
+                        </td>
+                        <td>
+                            <input type="date" id="dob" name="dob" required autocomplete="on" >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="time">Time:</label>
+                        </td>
+                        <td>
+                            <input type="time" id="time" name="time" required autocomplete="on" >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="qualification">Qualification:</label>
+                        </td>
+                        <td>
+                            <select name="qualification" id="qualification">
+                                <option value="" selected >--Select--</option>
+                                
+                                    <option value="phd">Phd</option>
+                                </optgroup>
+                                <optgroup label="University">
+                                    <option value="master">Master Degree</option>
+                                    <option value="Bachelor">Bachelor Degree</option>
+                                </optgroup>
+                                <optgroup label="School">
+                                    <option value="10th">SSLC(10thGRADE)</option>
+                                    <option value="12th">HSC(12thGRADE)</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="uniedu">University:</label>
+                        </td>
+                        <td>
+                            <select name="uniedu" id="uniedu" name="uniedu">
+                                <option value="" selected >--Select--</option>
+                                
+                                    <option value="u1">S.R.M University</option>
+                                
+                                
+                                    <option value="u2">Sathyabama university</option>
+                                    <option value="u3">SSN University</option>
+                                
+                                
+                                    <option value="u4">S.R.M Valliammai Engineering College</option>
+                                    <option value="u5">SkyBlue Educational Institute of Management and Sciences</option>
+                                
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Schledu">School:</label>
+                        </td>
+                        <td>
+                                <input type="text" list="School" name="School" id="Schledu">
+                                <datalist id="School">
+                                
+                                
+                                    <option value="Holy Cross Matriculation School">
+                                    <option value="St Joseph Higher Secondary School">
+                                    <option value="st Francis Xaviers Hr School">
+                                    <option value="Paul Matriculation Hr School">
+                                    <option value="Holy Cross Anglo-Indian Hr Sec School">
+
+                                
+                                
+                            </datalist>
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <label for="clr">Favorite Color:</label>
+                        </td>
+                        <td>
+                            <input type="color" id="clr" name="clr" required autocomplete="on" >
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <label for="url">LinkedIn URL:</label>
+                        </td>
+                        <td>
+                            <input type="url" id="url" name="url" required autocomplete="on" placeholder="www.linkedin/in/abc">
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <label for="range">Communication Skill:</label>
+                        </td>
+                        <td>
+                            <input type="range" id="range" name="range" required autocomplete="on" min="0" max="10" oninput="output.value=range.value">
+                            <output id="output">0</output>
+                        </td>
+                    </tr>
+                    
+                    
+                </table>
+            </fieldset>
+            <fieldset id="Designation">
+                <legend>Desinated Role</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="radio" name="desg" id="web">
+                        </td>
+                        <td>
+                            <label for="web">Web-Developer Intern</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="desg" id="app">
+                        </td>
+                        <td>
+                            <label for="app">App-Developer Intern</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="desg" id="ui">
+                        </td>
+                        <td>
+                            <label for="ui">UI/UX-Developer Intern</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="desg" id="cys">
+                        </td>
+                        <td>
+                            <label for="cys">Cyber-Security Intern</label>
+                        </td>
+                    </tr>
+                    
+                </table>    
+            </fieldset>
+            <fieldset id="skill">
+                <legend>Skill-Set</legend>
+                <table>
+                    <tr>
+                        <td>
+                        <input type="checkbox" id="html">
+                        <label for="html">HTML</label>
+                        </td>
+                        <td>
+                        <input type="checkbox" id="css">
+                        <label for="css">CSS</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <input type="checkbox" id="rct">
+                        <label for="rct">React</label>
+                        </td>
+                        <td>
+                        <input type="checkbox" id="fg">
+                        <label for="fg">Figma</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <input type="checkbox" id="jv">
+                        <label for="jv">java</label>
+                        </td>
+                        <td>
+                        <input type="checkbox" id="py">
+                        <label for="py">Python</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <input type="checkbox" id="js">
+                        <label for="js">javaScript</label>
+                        </td>
+                        <td>
+                        <input type="checkbox" id="py">
+                        <label for="py">TypeScript</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <input type="checkbox" id="py">
+                        <label for="py">Selenium</label>
+                        </td>
+                        <td>
+                        <input type="checkbox" id="py">
+                        <label for="py">Rust</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <input type="checkbox" id="py">
+                        <label for="py">Go</label>
+                        </td>
+                        <td>
+                        <input type="checkbox" id="py">
+                        <label for="py">Next Js</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <input type="checkbox" id="node">
+                        <label for="node">Node Js</label>
+                        </td>
+                        <td>
+                        <input type="checkbox" id="sql">
+                        <label for="sql">SQL</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <input type="checkbox" id="mdb">
+                        <label for="mdb">MongoDb</label>
+                        </td>
+                        <td>
+                        <input type="checkbox" id="js">
+                        <label for="js">javaScript</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <input type="checkbox" id="agjs">
+                        <label for="agjs">Angular JS</label>
+                        </td>
+                        <td>
+                        <input type="checkbox" id="lx">
+                        <label for="lx">linux</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <input type="checkbox" id="dcker">
+                        <label for="dcker">Docker</label>
+                        </td>
+                        <td>
+                        <input type="checkbox" id="kb">
+                        <label for="kb">Kubernetes</label>
+                        </td>
+                    </tr>
+                    
+                </table>
+
+            </fieldset>
+            <fieldset>
+                <legend>Message Us</legend>
+                <label for="msgs">Send us a Message:</label><br>
+                <input type="message" id="msgs" name="msgs" placeholder="message goes here ..."><br><br>
+                <label for="fdbck">Feedback</label><br>
+               <textarea name="fdbck" id="fdbck" rows="15" cols="60" placeholder="type feedback here....."></textarea>
+            </fieldset>
+            <button type="submit" style="width: 100px; height: 30px; border-radius: 50px;">Submit</button>
+            <button type="reset" style="width: 100px; height: 30px; border-radius: 50px;">Reset</button>
+            </form>
+        </section>
+        <br>
+        <center>
+        <section id="contact">
+            <table>
+                <caption>Contact Us</caption>
+                
+                <tr>
+                    <td><a href="mailto:karthikeyan117official@gmail.com" target="_blank">E-mail |</a></td> 
+                    <td><a href="https://wa.me/+919789268814" target="_blank">Whatsapp |</a></td>
+                    <td><a href="https://t.me/Sivakarthikeyan_8090" target="_blank">Telegram |</a></td>
+                    <td><a href="https://www.instagram.com/karthikeyan117_official_" target="_blank">Instagram</a></td>
+                </tr>
+            </table>
+        </section>
+        </center>
+        <br>
+        <br>
+        <footer>
+            <hr>
+            <center>&copy; sivakarthikeyanm117&lt;/d&gt;All Rights  Reserved</center>
+            <hr>
+        </footer>
+
+    </body>
+
+</html>
